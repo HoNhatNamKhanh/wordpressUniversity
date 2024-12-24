@@ -1,0 +1,83 @@
+/* 3rd party packages */
+@import "normalize.css";
+@import "../node_modules/@glidejs/glide/dist/css/glide.core.min.css";
+
+/* SASS and Global'ish Stuff */
+@import "base/variables";
+@import "base/baseline";
+@import "base/utility-classes";
+
+/* BEM Blocks */
+@import "modules/shame";
+@import "modules/login";
+@import "modules/btn";
+@import "modules/my-notes";
+@import "modules/site-header";
+@import "modules/site-footer";
+@import "modules/main-navigation";
+@import "modules/page-banner";
+@import "modules/hero-slider";
+@import "modules/search-overlay";
+@import "modules/professor-card";
+@import "modules/headline";
+@import "modules/generic-content";
+@import "modules/full-width-split";
+@import "modules/event-summary";
+@import "modules/page-links";
+@import "modules/acf-map";
+@import "modules/link-list";
+@import "modules/metabox";
+@import "modules/post-item";
+/* Style cho menu chính */
+.main-navigation {
+    background-color: #333;
+    position: relative;
+}
+
+/* Style cho các mục menu */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style cho từng mục menu */
+.menu li {
+    position: relative;
+    float: left;
+}
+
+/* Style cho liên kết menu */
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style cho liên kết khi hover */
+.menu a:hover {
+    background-color: #555;
+}
+
+/* Style cho menu dropdown */
+.menu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Style cho các mục menu con */
+.menu ul li {
+    float: none;
+}
+
+/* Hiển thị menu dropdown khi hover */
+.menu li:hover>ul {
+    display: block;
+}
